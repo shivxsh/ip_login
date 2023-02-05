@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
 import 'package:rive_animation/constants.dart';
+import 'package:rive_animation/screens/search.dart';
 import 'package:rive_animation/utils/rive_utils.dart';
 
 
@@ -45,7 +46,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               GestureDetector(
                 onTap: () {
-                  searchTrigger.change(true);
+                  //searchTrigger.change(true);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => SearchScreen()),
+                  );
                 },
                 child: const SizedBox(
                   height: 36,

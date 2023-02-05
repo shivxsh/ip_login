@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rive_animation/screens/home_screen.dart';
 // import 'package:rive_animation/screens/entryPoint/entry_point.dart';
 import 'package:rive_animation/screens/onboarding_screen.dart';
+import 'package:rive_animation/screens/search.dart';
 
 
 void main() {
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: const OnboardingScreen(),
-      // home: const HomeScreen(),
+      // home: const SearchScreen(),
     );
   }
 }
